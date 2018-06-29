@@ -4,10 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Quiz Generator</title>
+
+
+    <title>Online Quiz Generator</title>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/Styles.css" />
-    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/Styles.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="assets/JavaScript/Generator.js"></script>
 </head>
 
 <body>
@@ -23,21 +31,14 @@
                 <div class="question">
                     <table class="table" id='question-table'>
                         <thead>
-                            <tr>
-                                <th>Question</th>
-                            </tr>
                         </thead>
                     </table>
                     <tbody>
                     </tbody>
-
                 </div>
                 <div class="answers">
                     <table class="table" id='answers-table'>
-                        <thead>
-                            <tr>
-                                <th>Answers</th>
-                            </tr>
+                        <thead>                          
                         </thead>
                     </table>
                     <tbody>
@@ -53,34 +54,36 @@
         </div>
         <div class="section">
             <form>
-                <label for="question">Type in your Question</label>
-                <input type="text" id="input-question" name="question">
-                <p>
-                    <label for="first-answer">Answer 1</label>
-                </p>
-                <input type="text" id="answer-1" name="answers">
-                <p>
-                    <label for="second-answer">Answer 2</label>
-                </p>
-                <input type="text" id="answer-2" name="answers">
-                <p>
-                    <label for="third-answer">Answer 3</label>
-                </p>
-                <input type="text" id="answer-3" name="answers">
-                <p>
-                    <label for="first-answer">Answer 4</label>
-                </p>
-                <input type="text" id="answer-4" name="answers">
+                <div class="row">
+                    <label for="question">Question</label>
+                    <input type="text" id="input-question" name="question">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="first-answer">Answer 1</label>
+                        <input type="text" id="answer-1" name="answers">
+                    </div>
+                    <div class="col">
+                        <label for="second-answer">Answer 2</label>
+                        <input type="text" id="answer-2" name="answers">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="third-answer">Answer 3</label>
+                        <input type="text" id="answer-3" name="answers">
+                    </div>
+                    <div class="col">
+                        <label for="fourth-answer">Answer 4</label>
+                        <input type="text" id="answer-4" name="answers">
+                    </div>
+                </div>
+                <button>
+                    <input type="submit" value="Submit" id="submit">
+                </button>
             </form>
         </div>
-
     </div>
-</body>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="./assets/JavaScript/Generator.js"></script>
 </body>
 
 </html>
