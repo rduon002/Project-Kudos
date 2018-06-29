@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Our Awesome Project</title>
+    <title>Online Quiz Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/Styles.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="assets/JavaScript/Generator.js"></script>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="section">
+            <div class="header">
+                QUIZ GENERATOR
+            </div>
+        </div>
+        <div class="section">
+            <div class="preview">
+                <div class="question">
+                    <table class="table" id='question-table'>
+                        <thead>
+                            
+                        </thead>
+                    </table>
+                    <tbody>
+                    </tbody>
+
+                </div>
+                <div class="answers">
+                    <table class="table" id='answers-table'>
+                        <thead>
+                            
+                        </thead>
+                    </table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="radio">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <form>
+                <div class="row">
+                    <label for="question">Question</label>
+                    <input type="text" id="input-question" name="question">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="first-answer">Answer 1</label>
+                        <input type="text" id="answer-1" name="answers">
+                    </div>
+                    <div class="col">
+                        <label for="second-answer">Answer 2</label>
+                        <input type="text" id="answer-2" name="answers">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="third-answer">Answer 3</label>
+                        <input type="text" id="answer-3" name="answers">
+                    </div>
+                    <div class="col">
+                        <label for="fourth-answer">Answer 4</label>
+                        <input type="text" id="answer-4" name="answers">
+                    </div>
+                </div>
+                <button>
+                    <input type="submit" value="Submit" id="submit">
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
