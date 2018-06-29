@@ -1,0 +1,40 @@
+.wrapper{
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 10px;
+   width: 90%;
+}
+.section{
+   border-style: solid;
+   border-color: darkgray;
+   box-shadow: slategrey;
+}
+input[type=text] {
+   width: 90%;
+   padding: 5px;
+   margin: 15px;
+   box-sizing: border-box;
+}
+p{
+   line-height: 1px;
+}
+
+table {
+    font-family: 'Times New Roman';
+    border-collapse: collapse;
+    width: 100%;
+ }
+ 
+ td, th {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+ }
+ 
+ tr:nth-child(even) {
+    background-color: #dddddd;
+ }
