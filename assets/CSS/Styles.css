@@ -74,3 +74,11 @@ td {
 .radio{
     max-height: 50%;
 }
+
+button {
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+}
