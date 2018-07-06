@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Quiz Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/Styles.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="assets/JavaScript/Generator.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="section">
+            <div class="header">
+                QUIZ GENERATOR
+            </div>
+        </div>
+        
+        <!-- top Section -->
+        <div class="section" style="display: flex">
+            
+            <div class="quizes preview"></div>
+            
+            <div class="preview">
+                <div class="question">
+                    <table class="table" id='question-table'>
+                      <tr><td>Create a new Quiz!</td></tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <!-- end top section-->
+
+        <!-- bottom section -->
+        <div class="section preview">
+            <form>
+                <div class="row">
+                    <label for="question">Question</label>
+                    <input type="text" id="input-question" name="question">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="first-answer">Answer 1</label>
+                        <input type="text" id="answer-1" name="answers">
+                    </div>
+                    <div class="col">
+                        <label for="second-answer">Answer 2</label>
+                        <input type="text" id="answer-2" name="answers">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="third-answer">Answer 3</label>
+                        <input type="text" id="answer-3" name="answers">
+                    </div>
+                    <div class="col">
+                        <label for="fourth-answer">Answer 4</label>
+                        <input type="text" id="answer-4" name="answers">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="anyCat">Any Category</option>
+                            <option value="generalKnowledge">General Knowledge</option>
+                            <optgroup label="Entertainment">
+                                <option value="books">Books</option>
+                                <option value="film">Film</option>
+                                <option value="music">Music</option>
+                                <option value="musicals">Musicals and Theatres</option>
+                                <option value="tv">Television</option>
+                                <option value="videoGames">Video Games</option>
+                                <option value="boardGames">Board Games</option>
+                            </optgroup>
+
+                            <optgroup label="Sciences">
+                                <option value="scienceNature">Science and Nature</option>
+                                <option value="computers">Computers</option>
+                                <option value="maths">Mathematics</option>
+                            </optgroup>
+                            <option value="mythology">Mythology</option>
+                            <option value="sports">Sports</option>
+                            <option value="geography">Geography</option>
+                            <option value="history">History</option>
+                            <option value="politics">Politics</option>
+                            <option value="art">Art</option>
+                            <option value="celebs">Celebrities</option>
+                            <option value="animals">Animals</option>
+                            <option value="comics">Comics</option>
+                            <option value="gadgets">Gadgets</option>
+                            <option value="japanese">Japanese Anime and Manga</option>
+                            <option value="cartoons">Cartoons and Animations</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="difficulty">Difficulty</label>
+                        <select id="difficulty">
+                            <option value="">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="type">Type</label>
+                        <select id="type">
+                            <option value="">Any Type</option>
+                            <option value="multiple">Multiple Choice</option>
+                            <option value="boolean">True / False</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+                <button id="generateSports">Generate Question</button>
+            </form>
+        </div>
+        <!-- end bottom section -->
+    </div>
+
+    <button class="submit-quiz">Save Quiz!</button>
+</body>
+
+</html>

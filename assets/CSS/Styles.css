@@ -1,0 +1,76 @@
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.preview {
+    max-height:40vh;
+    overflow: auto;
+    flex: 1;
+    min-height: 200px;
+    border-style: solid;
+    border-color: darkgray;
+    margin: 15px;
+    box-shadow: 5px 10px #888888;
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+.header{
+    background-color: navy;
+    color: white;
+    font-family: Times New Roman;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+.row{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex:1;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 5px;
+    margin: 15px;
+    box-sizing: border-box;
+    border-style: groove;
+    border-radius: 7px;
+}
+label, select{
+    padding: 15px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+p{
+    line-height: 1px;
+}
+button{
+    margin: 15px;
+}
+.table{
+    max-height: 30%;
+}
+th {
+    text-align: left;
+    padding-left : 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+td {
+    padding-left : 30px;
+    padding-bottom: 5px;
+}
+.radio{
+    max-height: 50%;
+}
