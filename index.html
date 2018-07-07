@@ -22,26 +22,34 @@
                 QUIZ GENERATOR
             </div>
         </div>
-        
+
         <!-- top Section -->
-        <div class="section" style="display: flex">
-            
-            <div class="quizes preview"></div>
-            
+
+        <div class="row">
+            <div class="quizes preview">
+                    
+            </div>
+            <!-- <div class="deleteQuiz preview"></div> -->
             <div class="preview">
                 <div class="question">
                     <table class="table" id='question-table'>
-                      <tr><td>Create a new Quiz!</td></tr>
+                        <tr>
+                            <td>Create a new Quiz!</td>
+                        </tr>
                     </table>
                 </div>
             </div>
-
         </div>
+
         <!-- end top section-->
 
         <!-- bottom section -->
-        <div class="section preview">
+        <div class="section">
             <form>
+                <!--<div class="row">
+                    <label for="quizTitle">Quiz Title</label>
+                    <input type="text" id="quizTitle" name="title">
+                </div> -->
                 <div class="row">
                     <label for="question">Question</label>
                     <input type="text" id="input-question" name="question">
@@ -122,10 +130,13 @@
                 <button type="submit" id="submit">Submit Question</button>
                 <button id="generateSports">Generate Question</button>
                 <button class="submit-quiz">Save Quiz!</button>
+                <button class="remove-quiz">Delete All Quizes</button>
             </form>
         </div>
         <!-- end bottom section -->
     </div>
+
+
 </body>
 
 </html>
